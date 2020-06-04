@@ -7,7 +7,7 @@ Creating a page to test my knowledge
 
 <h1 width="100%">
     <img src="/assets/ecoleta.png"  width="49%" height"100%">
-    <img src="/assets/create-pointpg.png"  width="49%" height"100%">
+    <img src="/assets/create-point.png"  width="49%" height"100%">
 </h1>
 
 <h1 width="100%">
