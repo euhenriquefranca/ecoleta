@@ -3,7 +3,7 @@
 </h1>
 
 <h1>
-    <img src="public/assets/ecoleta.png"  width="49%" height"100%">
+    <img src="public/assets/ecoletaIndex.png"  width="49%" height"100%">
     <img src="public/assets/create-point.png"  width="49%" height"100%">
 </h1>
 
