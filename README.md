@@ -3,13 +3,13 @@
 </h1>
 
 <h1>
-    <img src="public/assets/ecoleta.PNG"  width="49%" height"100%">
-    <img src="public/assets/create-point.PNG"  width="49%" height"100%">
+    <img src="public/assets/ecoleta.png"  width="49%" height"100%">
+    <img src="public/assets/create-point.png"  width="49%" height"100%">
 </h1>
 
 <h1>
-    <img src="public/assets/modal.PNG" width="49%" height"100%">
-    <img src="public/assets/pontos-de-coleta.PNG" width="49%" height"100%">
+    <img src="public/assets/modal.png" width="49%" height"100%">
+    <img src="public/assets/pontos-de-coleta.png" width="49%" height"100%">
 </h1>
 
 <h3 align="center">
