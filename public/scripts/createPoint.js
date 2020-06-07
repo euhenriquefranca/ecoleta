@@ -27,13 +27,13 @@ function getCities(event) {
   citySelect.disabled = true
 
   fetch(url)
-  .then( res => res.json() )
-  .then( cities => {
-    for( const city of cities ) {
-      citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
-    }
+    .then( res => res.json() )
+    .then( cities => {
+      for( const city of cities ) {
+        citySelect.innerHTML += `<option value="${city.name}">${city.nome}</option>`
+      }
 
-    citySelect.disabled = false
+      citySelect.disabled = false
   })
 
 }
@@ -42,13 +42,13 @@ document.querySelector("select[name=uf]").addEventListener("change", getCities)
 
   // itens de coleta
   // pegar todos os li's
-  const itemsToCollect = document.querySelectorAll(".items-grid li")
+const itemsToCollect = document.querySelectorAll(".items-grid li")
 
-  for (const item of itemsToCollect) {
-    item.addEventListener("click", handleSelectedItem)
-  }
+for (const item of itemsToCollect) {
+  item.addEventListener("click", handleSelectedItem)
+}
 
-const collectedItems = document.querySelector("input[nome=items")
+const collectedItems = document.querySelector("input[name=items]")
 
 
 
@@ -60,7 +60,10 @@ function handleSelectedItem(event) {
   // adicionar ou remover uma classe com javascript
   itemLi.classList.toggle("selected")
 
-  const itemId = event.target.dataset.id
+  // const itemId = itemLi.dataset.id
+  const itemId = itemLi.dataset.id
+
+  // console.log('ITEM ID: ', itemId)
 
   
   // verificar se existem itens selecionados, se sim
@@ -69,7 +72,9 @@ function handleSelectedItem(event) {
   const alreadySelected= selectedItems.findIndex( item => {
     const itemFound = item == itemId // isso será true ou false
     return itemFound
-  })
+  }) 
+    
+
 
   // se já estiver selecionado,
   if( alreadySelected >= 0 ) {
@@ -83,9 +88,10 @@ function handleSelectedItem(event) {
   } else {
     // se não estiver adicionado
     // adicionar à seleção
-    selectedItems.push(itemId)
+      selectedItems.push(itemId)
   }
 
+  // console.log("selectedItems: ", selectedItems)
   // atualizar o campo escondido com os itens selecionados
   collectedItems.value = selectedItems
 }
